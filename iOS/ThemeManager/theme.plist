@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PanLeftPosition</key>
+	<integer>-260</integer>
+	<key>PanRightPosition</key>
+	<integer>260</integer>
+	<key>PanDuration</key>
+	<real>0.3</real>
+	<key>PanDelay</key>
+	<real>0</real>
+	<key>PanLeftTreshold</key>
+	<integer>-160</integer>
+	<key>PanRightTreshold</key>
+	<integer>160</integer>
+	<key>LeftLayerBackgroundColor</key>
+	<string>0xD7D7D7</string>
+	<key>CenterLayerBackgroundColor</key>
+	<string>0xD7D7D7</string>
+	<key>RightLayerBackgroundColor</key>
+	<string>0xD7D7D7</string>
+	<key>RightButtonOriginX</key>
+	<integer>20</integer>
+	<key>RightButtonOriginY</key>
+	<integer>55</integer>
+	<key>RightButtonHeight</key>
+	<integer>22</integer>
+	<key>RightButtonWidth</key>
+	<integer>22</integer>
+	<key>RightButtonBackgroundColor</key>
+	<string></string>
+	<key>RightButtonImage</key>
+	<string>header-bt-contacts</string>
+	<key>LeftButtonOriginX</key>
+	<integer>278</integer>
+	<key>LeftButtonOriginY</key>
+	<integer>20</integer>
+	<key>LeftButtonHeight</key>
+	<integer>22</integer>
+	<key>LeftButtonWidth</key>
+	<integer>22</integer>
+	<key>LeftButtonBackgroundColor</key>
+	<string></string>
+	<key>LeftButtonImage</key>
+	<string>header-bt-config</string>
+</dict>
+</plist>
