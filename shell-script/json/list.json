@@ -1,0 +1,30 @@
+{
+    "items" : [
+        {
+            "name" : "item-1",
+            "data" : [
+                {
+                    "name" : "subitem-1",
+                    "value" : "subitem-1-1-value"
+                },
+                {
+                    "name" : "subitem-2",
+                    "value" : "subitem-1-2-value"
+                }
+            ]
+        },
+        {
+            "name" : "item-2",
+            "data" : [
+                {
+                    "name" : "subitem-1",
+                    "value" : "subitem-2-1-value"
+                },
+                {
+                    "name" : "subitem-2",
+                    "value" : "subitem-2-2-value"
+                }
+            ]
+        }
+    ]
+}
