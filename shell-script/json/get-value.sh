@@ -1,18 +1,18 @@
-#!/bin/sh
+#!/bin/bash
 
 # check jq command is availble
-if ! command -v jq &> /dev/null
+if ! command -v jq > /dev/null
 then
     echo "command not found: jq"
 
     echo "Please install using:"
     if [[ "$OSTYPE" == "linux-gnu"* ]]
     then
-        if command -v yum &> /dev/null; then
+        if command -v yum > /dev/null; then
             echo "yum install jq"
-        elif command -v apt &> /dev/null; then
+        elif command -v apt > /dev/null; then
             echo "apt install jq"
-        elif command -v brew &> /dev/null; then
+        elif command -v brew > /dev/null; then
             echo "brew install jq"
         fi
     elif [[ "$OSTYPE" == "darwin"* ]]
