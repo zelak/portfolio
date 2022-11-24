@@ -41,4 +41,28 @@ fi
 export itemname=$1
 export subitemname=$2
 
-cat $jsonfile | jq '.items[] | select(.name==env.itemname) | .data[] | select(.name==env.subitemname) | .value'
+# select item
+item=$(cat $jsonfile | jq '.items[] | select(.name==env.itemname)')
+if [[ -z $item ]]
+then
+    echo "item not found: $itemname"
+    exit 1
+fi
+
+# select subitem
+subitem=$(echo $item | jq '.data[] | select(.name==env.subitemname)')
+if [[ -z $subitem ]]
+then
+    echo "subitem not found: $subitemname"
+    exit 1
+fi
+
+# select value
+value=$(echo $subitem | jq '.value')
+if [[ $value == "null" ]]
+then
+    echo "subitem has no value: $subitemname"
+    exit 1
+fi
+
+echo "value: $value"
